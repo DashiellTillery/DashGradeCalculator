@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href = "style.css">
+
+</head>
+
+<body>
+<h1> Grade Calculator </h1>
+<h4>Specific grades must be seperated with a comma Ex:80,90,70</h4>
+<table id="table" border = 1 cellspacing =2>
+    <tr>
+        <th>Field</th>
+        <th>Grades</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+       <th id = h>Homework</th>
+        <td><input type = "text" id ="hwgrade" value = 80,90,100></td>
+        <td><input type = "text" id ="hwweight" value = 20></td>
+    </tr>
+    <tr>
+        <th id = c>Classwork</th>
+        <td><input type = "text"  id ="csgrade" value = 80,90,100></td>
+        <td><input type = "text"  id ="csweight"value = 20></td>
+    </tr>
+    <tr>
+        <th id  = t>tests</th>
+        <td><input type = "text"  id ="tgrade" value = 80,90,100></td>
+        <td><input type = "text"  id ="tweight" value = 20></td>
+    </tr>
+    <tr>
+        <th id = p>participation</th>
+        <td><input type = "text"  id ="pgrade" value = 80,90,100></td>
+        <td><input type = "text"  id ="pweight" value = 10></td>
+    </tr>
+    <tr>
+        <th id = pog>projects</th>
+        <td ><input type = "text" id ="pograde" value = 80,90,100></td>
+        <td><input type = "text"  id ="poweight" value = 10></td>
+    </tr>
+
+
+</table>
+<table id="finalTable"  border = 1 cellspacing =2>
+    <tr>
+    <th>Desired Grade</th>
+    <td><input type = "text" id = "desired" value = 95></td>
+    </tr>
+    <tr>
+        <th>Final Weight</th>
+    <td><input type = "text" id = "fweight" value  = 20></td>
+    </tr>
+
+</table>
+<button onclick = "grades()">Go!</button>
+<div id = final></div>
+<div id = ngrade></div>
+</body>
+</html>
